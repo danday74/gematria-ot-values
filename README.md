@@ -6,4 +6,4 @@
 [![dependencies](https://david-dm.org/danday74/gematria-ot-values/status.svg)](https://david-dm.org/danday74/gematria-ot-values)
 [![downloads](https://img.shields.io/npm/dm/gematria-ot-values.svg)](https://www.npmjs.com/package/gematria-ot-values)
 
-
+** Gematria Old Testament Values **
