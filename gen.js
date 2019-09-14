@@ -60,8 +60,8 @@ const getSummaryLines = (lines, book) => {
 const getVerses = summaryLines => {
   return summaryLines.map(line => {
     line.count = {}
-    line.count.letters = line.text.replace(/ /g, '').length
     line.count.words = line.text.split(' ').length
+    line.count.letters = line.text.replace(/ /g, '').length
     line.value = {
       ordinal: {},
       standard: {}
@@ -69,15 +69,15 @@ const getVerses = summaryLines => {
 
     const ordinalLetters = getValueForLetters(line.text, false)
     const ordinalWords = getValueForWords(line.text, false)
-    line.value.ordinal.letters = ordinalLetters
     line.value.ordinal.words = ordinalWords
+    line.value.ordinal.letters = ordinalLetters
     line.value.ordinal.total = sum(ordinalWords)
     assert.strictEqual(sum(ordinalLetters), sum(ordinalWords))
 
     const standardLetters = getValueForLetters(line.text, true)
     const standardWords = getValueForWords(line.text, true)
-    line.value.standard.letters = standardLetters
     line.value.standard.words = standardWords
+    line.value.standard.letters = standardLetters
     line.value.standard.total = sum(standardWords)
     assert.strictEqual(sum(standardLetters), sum(standardWords))
 
@@ -101,8 +101,8 @@ const getChapters = (allVerses, book) => {
         },
         count: {
           verses: verses.length,
-          letters: sum(verses.map(verse => verse.count.letters)),
-          words: sum(verses.map(verse => verse.count.words))
+          words: sum(verses.map(verse => verse.count.words)),
+          letters: sum(verses.map(verse => verse.count.letters))
         },
         value: {
           ordinal: {total: sum(verses.map(verse => verse.value.ordinal.total))},
@@ -115,10 +115,30 @@ const getChapters = (allVerses, book) => {
   return chapters
 }
 
-const writeBookToFile = (chapters, filename) => {
+const getBook = (chapters, book) => {
+  return {
+    ref: {
+      book,
+      bookCount: 1
+    },
+    count: {
+      chapters: chapters.length,
+      verses: sum(chapters.map(chapter => chapter.count.verses)),
+      words: sum(chapters.map(chapter => chapter.count.words)),
+      letters: sum(chapters.map(chapter => chapter.count.letters))
+    },
+    value: {
+      ordinal: {total: sum(chapters.map(chapter => chapter.value.ordinal.total))},
+      standard: {total: sum(chapters.map(chapter => chapter.value.standard.total))}
+    },
+    chapters: chapters
+  }
+}
+
+const writeBookToFile = (book, filename) => {
   const fullFilename = filename + '-summary.json'
   const filepath = __dirname + '/data/' + filename + '/' + fullFilename
-  fs.writeFileSync(filepath, stringify(chapters, {indent: 2, maxLength: 500}), 'utf8')
+  fs.writeFileSync(filepath, stringify(book, {indent: 2, maxLength: 500}), 'utf8')
   console.log('wrote to file', fullFilename)
 }
 
@@ -129,14 +149,15 @@ if (args.length) {
     const lookup = genLookup[num]
     const filename = num.toString().padStart(2, '0') + '-' + lookup
     if (lookup) {
-      const book = stringUtils.capitalize(lookup)
+      const bookName = stringUtils.capitalize(lookup)
       const filepath = __dirname + '/data/' + filename + '/' + filename + '.md'
       const content = getContent(filepath)
       const lines = getLines(content)
-      const summaryLines = getSummaryLines(lines, book)
+      const summaryLines = getSummaryLines(lines, bookName)
       const allVerses = getVerses(summaryLines)
-      const chapters = getChapters(allVerses, book)
-      writeBookToFile(chapters, filename)
+      const chapters = getChapters(allVerses, bookName)
+      const book = getBook(chapters, bookName)
+      writeBookToFile(book, filename)
     }
   }
 }
