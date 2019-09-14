@@ -1,9 +1,9 @@
-# node-template-19
+# gematria-ot-values
 
-[![build](https://img.shields.io/travis/danday74/node-template-19/master.svg?label=linux)](https://travis-ci.org/danday74/node-template-19)
-[![coverage](https://coveralls.io/repos/github/danday74/node-template-19/badge.svg)](https://coveralls.io/github/danday74/node-template-19)
-[![npm](https://img.shields.io/npm/v/node-template-19.svg)](https://www.npmjs.com/package/node-template-19)
-[![dependencies](https://david-dm.org/danday74/node-template-19/status.svg)](https://david-dm.org/danday74/node-template-19)
-[![downloads](https://img.shields.io/npm/dm/node-template-19.svg)](https://www.npmjs.com/package/node-template-19)
+[![build](https://img.shields.io/travis/danday74/gematria-ot-values/master.svg?label=linux)](https://travis-ci.org/danday74/gematria-ot-values)
+[![coverage](https://coveralls.io/repos/github/danday74/gematria-ot-values/badge.svg)](https://coveralls.io/github/danday74/gematria-ot-values)
+[![npm](https://img.shields.io/npm/v/gematria-ot-values.svg)](https://www.npmjs.com/package/gematria-ot-values)
+[![dependencies](https://david-dm.org/danday74/gematria-ot-values/status.svg)](https://david-dm.org/danday74/gematria-ot-values)
+[![downloads](https://img.shields.io/npm/dm/gematria-ot-values.svg)](https://www.npmjs.com/package/gematria-ot-values)
 
-**Template for creating an npm package in 2019**
+
