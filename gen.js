@@ -2,6 +2,7 @@
 
 const assert = require('assert')
 const fs = require('fs')
+const stringify = require('json-stringify-pretty-compact')
 const stringUtils = require('./utils/string-utils')
 const genLookup = require('./gen-lookup')
 const ordinals = require('./data/ordinals')
@@ -32,7 +33,7 @@ const getValueForWords = (text, standard) => {
 }
 
 const getContent = filepath => {
-  let content = fs.readFileSync(filepath, 'utf-8')
+  let content = fs.readFileSync(filepath, 'utf8')
   content = content.replace(/(\r\n|\n|\r)/gm, ' ')
   content = content.replace(RegExp(String.fromCharCode(8207), 'g'), 'X')
   content = content.replace(/\s+/g, ' ')
@@ -45,7 +46,7 @@ const getLines = content => {
   return lines
 }
 
-const getBasicSummaryLines = (lines, book) => {
+const getSummaryLines = (lines, book) => {
   return lines.map((line, i) => {
     const cv = line.match(/[0-9]+:[0-9]+/)[0]
     const parts = cv.split(':')
@@ -56,8 +57,8 @@ const getBasicSummaryLines = (lines, book) => {
   })
 }
 
-const getSummaryLines = basicSummaryLines => {
-  return basicSummaryLines.map(line => {
+const getVerses = summaryLines => {
+  return summaryLines.map(line => {
     line.count = {}
     line.count.letters = line.text.replace(/ /g, '').length
     line.count.words = line.text.split(' ').length
@@ -84,6 +85,43 @@ const getSummaryLines = basicSummaryLines => {
   })
 }
 
+const getChapters = (allVerses, book) => {
+  const chapters = []
+  let count = 0
+  let verses
+  do {
+    count++
+    verses = allVerses.filter(line => line.ref.chapter === count)
+    if (verses.length) {
+      chapters.push({
+        ref: {
+          book,
+          chapter: count,
+          chapterCount: count
+        },
+        count: {
+          verses: verses.length,
+          letters: sum(verses.map(verse => verse.count.letters)),
+          words: sum(verses.map(verse => verse.count.words))
+        },
+        value: {
+          ordinal: {total: sum(verses.map(verse => verse.value.ordinal.total))},
+          standard: {total: sum(verses.map(verse => verse.value.standard.total))}
+        },
+        verses
+      })
+    }
+  } while (verses.length)
+  return chapters
+}
+
+const writeBookToFile = (chapters, filename) => {
+  const fullFilename = filename + '-summary.json'
+  const filepath = __dirname + '/data/' + filename + '/' + fullFilename
+  fs.writeFileSync(filepath, stringify(chapters, {indent: 2, maxLength: 500}), 'utf8')
+  console.log('wrote to file', fullFilename)
+}
+
 const args = process.argv.splice(2)
 if (args.length) {
   const num = stringUtils.toInteger(args[0])
@@ -95,37 +133,10 @@ if (args.length) {
       const filepath = __dirname + '/data/' + filename + '/' + filename + '.md'
       const content = getContent(filepath)
       const lines = getLines(content)
-      const basicSummaryLines = getBasicSummaryLines(lines, book)
-      const summaryLines = getSummaryLines(basicSummaryLines)
-
-      const chapters = []
-      let count = 0
-      let verses
-      do {
-        count++
-        verses = summaryLines.filter(line => line.ref.chapter === count)
-        if (verses.length) {
-          chapters.push({
-            ref: {
-              book,
-              chapter: count,
-              chapterCount: count
-            },
-            verses,
-            count: {
-              verses: verses.length,
-              letters: sum(verses.map(verse => verse.count.letters)),
-              words: sum(verses.map(verse => verse.count.words))
-            },
-            value: {
-              ordinal: {total: sum(verses.map(verse => verse.value.ordinal.total))},
-              standard: {total: sum(verses.map(verse => verse.value.standard.total))}
-            }
-          })
-        }
-      } while (verses.length)
-
-      console.log(chapters[0])
+      const summaryLines = getSummaryLines(lines, book)
+      const allVerses = getVerses(summaryLines)
+      const chapters = getChapters(allVerses, book)
+      writeBookToFile(chapters, filename)
     }
   }
 }

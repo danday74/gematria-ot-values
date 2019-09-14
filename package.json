@@ -11,6 +11,7 @@
     "build": "npm test && npm run enforcer"
   },
   "dependencies": {
+    "json-stringify-pretty-compact": "^2.0.0",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
