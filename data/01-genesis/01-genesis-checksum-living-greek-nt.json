@@ -1,0 +1,452 @@
+[
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 1
+    },
+    "letters": 1671,
+    "words": 434,
+    "standard": 100099
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 2
+    },
+    "letters": 1235,
+    "words": 328,
+    "standard": 73431
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 3
+    },
+    "letters": 1307,
+    "words": 347,
+    "standard": 84383
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 4
+    },
+    "letters": 1209,
+    "words": 341,
+    "standard": 79944
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 5
+    },
+    "letters": 1397,
+    "words": 365,
+    "standard": 109589
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 6
+    },
+    "letters": 1107,
+    "words": 305,
+    "standard": 77222
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 7
+    },
+    "letters": 1209,
+    "words": 332,
+    "standard": 75332
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 8
+    },
+    "letters": 1145,
+    "words": 308,
+    "standard": 71863
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 9
+    },
+    "letters": 1288,
+    "words": 353,
+    "standard": 89271
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 10
+    },
+    "letters": 1123,
+    "words": 287,
+    "standard": 75579
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 11
+    },
+    "letters": 1450,
+    "words": 392,
+    "standard": 110728
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 12
+    },
+    "letters": 1015,
+    "words": 268,
+    "standard": 67640
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 13
+    },
+    "letters": 879,
+    "words": 241,
+    "standard": 50018
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 14
+    },
+    "letters": 1285,
+    "words": 342,
+    "standard": 83764
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 15
+    },
+    "letters": 961,
+    "words": 258,
+    "standard": 65731
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 16
+    },
+    "letters": 810,
+    "words": 223,
+    "standard": 59811
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 17
+    },
+    "letters": 1388,
+    "words": 355,
+    "standard": 105227
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 18
+    },
+    "letters": 1702,
+    "words": 437,
+    "standard": 107808
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 19
+    },
+    "letters": 2146,
+    "words": 563,
+    "standard": 134467
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 20
+    },
+    "letters": 1041,
+    "words": 282,
+    "standard": 66389
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 21
+    },
+    "letters": 1597,
+    "words": 436,
+    "standard": 113115
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 22
+    },
+    "letters": 1375,
+    "words": 367,
+    "standard": 83749
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 23
+    },
+    "letters": 1005,
+    "words": 275,
+    "standard": 77791
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 24
+    },
+    "letters": 3499,
+    "words": 918,
+    "standard": 224583
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 25
+    },
+    "letters": 1552,
+    "words": 405,
+    "standard": 104753
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 26
+    },
+    "letters": 1838,
+    "words": 466,
+    "standard": 124127
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 27
+    },
+    "letters": 2375,
+    "words": 638,
+    "standard": 142643
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 28
+    },
+    "letters": 1206,
+    "words": 323,
+    "standard": 78901
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 29
+    },
+    "letters": 1689,
+    "words": 471,
+    "standard": 108472
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 30
+    },
+    "letters": 2115,
+    "words": 560,
+    "standard": 150427
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 31
+    },
+    "letters": 2896,
+    "words": 780,
+    "standard": 174433
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 32
+    },
+    "letters": 1674,
+    "words": 441,
+    "standard": 103134
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 33
+    },
+    "letters": 1002,
+    "words": 268,
+    "standard": 63455
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 34
+    },
+    "letters": 1587,
+    "words": 421,
+    "standard": 107903
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 35
+    },
+    "letters": 1422,
+    "words": 378,
+    "standard": 93558
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 36
+    },
+    "letters": 1851,
+    "words": 487,
+    "standard": 124047
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 37
+    },
+    "letters": 1964,
+    "words": 494,
+    "standard": 113900
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 38
+    },
+    "letters": 1513,
+    "words": 405,
+    "standard": 100440
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 39
+    },
+    "letters": 1301,
+    "words": 347,
+    "standard": 77038
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 40
+    },
+    "letters": 1194,
+    "words": 312,
+    "standard": 90446
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 41
+    },
+    "letters": 2971,
+    "words": 776,
+    "standard": 224421
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 42
+    },
+    "letters": 2046,
+    "words": 528,
+    "standard": 126297
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 43
+    },
+    "letters": 1976,
+    "words": 485,
+    "standard": 119557
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 44
+    },
+    "letters": 1729,
+    "words": 455,
+    "standard": 104406
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 45
+    },
+    "letters": 1523,
+    "words": 397,
+    "standard": 96136
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 46
+    },
+    "letters": 1627,
+    "words": 414,
+    "standard": 100532
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 47
+    },
+    "letters": 1989,
+    "words": 512,
+    "standard": 123013
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 48
+    },
+    "letters": 1355,
+    "words": 350,
+    "standard": 83032
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 49
+    },
+    "letters": 1403,
+    "words": 368,
+    "standard": 98066
+  },
+  {
+    "ref": {
+      "book": "Genesis",
+      "chapter": 50
+    },
+    "letters": 1427,
+    "words": 375,
+    "standard": 85652
+  }
+]
