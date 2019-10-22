@@ -99,6 +99,7 @@ const getChapters = (allVerses, book) => {
           chapter: count,
           chapterCount: count
         },
+        checksum: null,
         count: {
           verses: verses.length,
           words: sum(verses.map(verse => verse.count.words)),

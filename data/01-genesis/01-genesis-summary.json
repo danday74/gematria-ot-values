@@ -5,6 +5,7 @@
   "chapters": [
     {
       "ref": {"book": "Genesis", "chapter": 1, "chapterCount": 1},
+      "checksum": null,
       "count": {"verses": 31, "words": 434, "letters": 1671},
       "value": {"ordinal": {"total": 17650}, "standard": {"total": 100099}},
       "verses": [
@@ -258,6 +259,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 2, "chapterCount": 2},
+      "checksum": null,
       "count": {"verses": 25, "words": 328, "letters": 1235},
       "value": {"ordinal": {"total": 12411}, "standard": {"total": 73431}},
       "verses": [
@@ -475,6 +477,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 3, "chapterCount": 3},
+      "checksum": null,
       "count": {"verses": 24, "words": 347, "letters": 1307},
       "value": {"ordinal": {"total": 13688}, "standard": {"total": 84383}},
       "verses": [
@@ -681,6 +684,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 4, "chapterCount": 4},
+      "checksum": null,
       "count": {"verses": 26, "words": 341, "letters": 1210},
       "value": {"ordinal": {"total": 12684}, "standard": {"total": 79950}},
       "verses": [
@@ -895,6 +899,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 5, "chapterCount": 5},
+      "checksum": null,
       "count": {"verses": 32, "words": 365, "letters": 1397},
       "value": {"ordinal": {"total": 15494}, "standard": {"total": 109589}},
       "verses": [
@@ -1157,6 +1162,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 6, "chapterCount": 6},
+      "checksum": null,
       "count": {"verses": 22, "words": 305, "letters": 1107},
       "value": {"ordinal": {"total": 11783}, "standard": {"total": 77222}},
       "verses": [
@@ -1339,6 +1345,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 7, "chapterCount": 7},
+      "checksum": null,
       "count": {"verses": 24, "words": 332, "letters": 1210},
       "value": {"ordinal": {"total": 12653}, "standard": {"total": 75338}},
       "verses": [
@@ -1536,6 +1543,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 8, "chapterCount": 8},
+      "checksum": null,
       "count": {"verses": 22, "words": 308, "letters": 1145},
       "value": {"ordinal": {"total": 11937}, "standard": {"total": 71868}},
       "verses": [
@@ -1732,6 +1740,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 9, "chapterCount": 9},
+      "checksum": null,
       "count": {"verses": 29, "words": 353, "letters": 1287},
       "value": {"ordinal": {"total": 13809}, "standard": {"total": 89265}},
       "verses": [
@@ -1945,6 +1954,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 10, "chapterCount": 10},
+      "checksum": null,
       "count": {"verses": 32, "words": 287, "letters": 1123},
       "value": {"ordinal": {"total": 11715}, "standard": {"total": 75579}},
       "verses": [
@@ -2152,6 +2162,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 11, "chapterCount": 11},
+      "checksum": null,
       "count": {"verses": 32, "words": 392, "letters": 1450},
       "value": {"ordinal": {"total": 15940}, "standard": {"total": 110728}},
       "verses": [
@@ -2411,6 +2422,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 12, "chapterCount": 12},
+      "checksum": null,
       "count": {"verses": 20, "words": 268, "letters": 1015},
       "value": {"ordinal": {"total": 10490}, "standard": {"total": 67640}},
       "verses": [
@@ -2595,6 +2607,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 13, "chapterCount": 13},
+      "checksum": null,
       "count": {"verses": 18, "words": 241, "letters": 878},
       "value": {"ordinal": {"total": 9004}, "standard": {"total": 50008}},
       "verses": [
@@ -2751,6 +2764,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 14, "chapterCount": 14},
+      "checksum": null,
       "count": {"verses": 24, "words": 342, "letters": 1284},
       "value": {"ordinal": {"total": 14040}, "standard": {"total": 83754}},
       "verses": [
@@ -2959,6 +2973,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 15, "chapterCount": 15},
+      "checksum": null,
       "count": {"verses": 21, "words": 258, "letters": 961},
       "value": {"ordinal": {"total": 9913}, "standard": {"total": 65731}},
       "verses": [
@@ -3126,6 +3141,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 16, "chapterCount": 16},
+      "checksum": null,
       "count": {"verses": 16, "words": 223, "letters": 810},
       "value": {"ordinal": {"total": 8763}, "standard": {"total": 59811}},
       "verses": [
@@ -3265,6 +3281,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 17, "chapterCount": 17},
+      "checksum": null,
       "count": {"verses": 27, "words": 355, "letters": 1388},
       "value": {"ordinal": {"total": 15290}, "standard": {"total": 105227}},
       "verses": [
@@ -3496,6 +3513,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 18, "chapterCount": 18},
+      "checksum": null,
       "count": {"verses": 33, "words": 437, "letters": 1702},
       "value": {"ordinal": {"total": 17988}, "standard": {"total": 107808}},
       "verses": [
@@ -3783,6 +3801,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 19, "chapterCount": 19},
+      "checksum": null,
       "count": {"verses": 38, "words": 563, "letters": 2147},
       "value": {"ordinal": {"total": 22396}, "standard": {"total": 134473}},
       "verses": [
@@ -4105,6 +4124,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 20, "chapterCount": 20},
+      "checksum": null,
       "count": {"verses": 18, "words": 282, "letters": 1041},
       "value": {"ordinal": {"total": 10517}, "standard": {"total": 66389}},
       "verses": [
@@ -4272,6 +4292,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 21, "chapterCount": 21},
+      "checksum": null,
       "count": {"verses": 34, "words": 436, "letters": 1597},
       "value": {"ordinal": {"total": 16977}, "standard": {"total": 113115}},
       "verses": [
@@ -4549,6 +4570,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 22, "chapterCount": 22},
+      "checksum": null,
       "count": {"verses": 24, "words": 367, "letters": 1375},
       "value": {"ordinal": {"total": 13819}, "standard": {"total": 83749}},
       "verses": [
@@ -4765,6 +4787,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 23, "chapterCount": 23},
+      "checksum": null,
       "count": {"verses": 20, "words": 275, "letters": 1005},
       "value": {"ordinal": {"total": 11425}, "standard": {"total": 77791}},
       "verses": [
@@ -4924,6 +4947,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 24, "chapterCount": 24},
+      "checksum": null,
       "count": {"verses": 67, "words": 918, "letters": 3499},
       "value": {"ordinal": {"total": 35709}, "standard": {"total": 224583}},
       "verses": [
@@ -5487,6 +5511,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 25, "chapterCount": 25},
+      "checksum": null,
       "count": {"verses": 34, "words": 405, "letters": 1551},
       "value": {"ordinal": {"total": 16660}, "standard": {"total": 104743}},
       "verses": [
@@ -5757,6 +5782,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 26, "chapterCount": 26},
+      "checksum": null,
       "count": {"verses": 35, "words": 466, "letters": 1838},
       "value": {"ordinal": {"total": 19597}, "standard": {"total": 124123}},
       "verses": [
@@ -6038,6 +6064,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 27, "chapterCount": 27},
+      "checksum": null,
       "count": {"verses": 46, "words": 638, "letters": 2374},
       "value": {"ordinal": {"total": 24503}, "standard": {"total": 142637}},
       "verses": [
@@ -6420,6 +6447,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 28, "chapterCount": 28},
+      "checksum": null,
       "count": {"verses": 22, "words": 323, "letters": 1206},
       "value": {"ordinal": {"total": 12805}, "standard": {"total": 78901}},
       "verses": [
@@ -6609,6 +6637,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 29, "chapterCount": 29},
+      "checksum": null,
       "count": {"verses": 35, "words": 471, "letters": 1689},
       "value": {"ordinal": {"total": 17356}, "standard": {"total": 108472}},
       "verses": [
@@ -6902,6 +6931,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 30, "chapterCount": 30},
+      "checksum": null,
       "count": {"verses": 43, "words": 560, "letters": 2115},
       "value": {"ordinal": {"total": 22789}, "standard": {"total": 150427}},
       "verses": [
@@ -7229,6 +7259,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 31, "chapterCount": 31},
+      "checksum": null,
       "count": {"verses": 54, "words": 768, "letters": 2841},
       "value": {"ordinal": {"total": 29490}, "standard": {"total": 171231}},
       "verses": [
@@ -7689,6 +7720,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 32, "chapterCount": 32},
+      "checksum": null,
       "count": {"verses": 33, "words": 453, "letters": 1729},
       "value": {"ordinal": {"total": 18316}, "standard": {"total": 106336}},
       "verses": [
@@ -7975,6 +8007,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 33, "chapterCount": 33},
+      "checksum": null,
       "count": {"verses": 20, "words": 268, "letters": 1002},
       "value": {"ordinal": {"total": 10679}, "standard": {"total": 63455}},
       "verses": [
@@ -8142,6 +8175,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 34, "chapterCount": 34},
+      "checksum": null,
       "count": {"verses": 31, "words": 421, "letters": 1587},
       "value": {"ordinal": {"total": 16634}, "standard": {"total": 107903}},
       "verses": [
@@ -8411,6 +8445,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 35, "chapterCount": 35},
+      "checksum": null,
       "count": {"verses": 29, "words": 378, "letters": 1423},
       "value": {"ordinal": {"total": 15075}, "standard": {"total": 93564}},
       "verses": [
@@ -8648,6 +8683,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 36, "chapterCount": 36},
+      "checksum": null,
       "count": {"verses": 43, "words": 487, "letters": 1851},
       "value": {"ordinal": {"total": 19485}, "standard": {"total": 124047}},
       "verses": [
@@ -8972,6 +9008,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 37, "chapterCount": 37},
+      "checksum": null,
       "count": {"verses": 36, "words": 494, "letters": 1964},
       "value": {"ordinal": {"total": 19823}, "standard": {"total": 113900}},
       "verses": [
@@ -9285,6 +9322,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 38, "chapterCount": 38},
+      "checksum": null,
       "count": {"verses": 30, "words": 405, "letters": 1513},
       "value": {"ordinal": {"total": 15588}, "standard": {"total": 100440}},
       "verses": [
@@ -9536,6 +9574,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 39, "chapterCount": 39},
+      "checksum": null,
       "count": {"verses": 23, "words": 347, "letters": 1301},
       "value": {"ordinal": {"total": 12877}, "standard": {"total": 77038}},
       "verses": [
@@ -9745,6 +9784,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 40, "chapterCount": 40},
+      "checksum": null,
       "count": {"verses": 23, "words": 312, "letters": 1194},
       "value": {"ordinal": {"total": 13726}, "standard": {"total": 90442}},
       "verses": [
@@ -9950,6 +9990,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 41, "chapterCount": 41},
+      "checksum": null,
       "count": {"verses": 57, "words": 776, "letters": 2972},
       "value": {"ordinal": {"total": 33726}, "standard": {"total": 224427}},
       "verses": [
@@ -10443,6 +10484,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 42, "chapterCount": 42},
+      "checksum": null,
       "count": {"verses": 38, "words": 528, "letters": 2046},
       "value": {"ordinal": {"total": 21015}, "standard": {"total": 126297}},
       "verses": [
@@ -10772,6 +10814,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 43, "chapterCount": 43},
+      "checksum": null,
       "count": {"verses": 34, "words": 485, "letters": 1976},
       "value": {"ordinal": {"total": 20332}, "standard": {"total": 119557}},
       "verses": [
@@ -11080,6 +11123,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 44, "chapterCount": 44},
+      "checksum": null,
       "count": {"verses": 34, "words": 455, "letters": 1729},
       "value": {"ordinal": {"total": 17403}, "standard": {"total": 104406}},
       "verses": [
@@ -11374,6 +11418,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 45, "chapterCount": 45},
+      "checksum": null,
       "count": {"verses": 28, "words": 397, "letters": 1522},
       "value": {"ordinal": {"total": 16305}, "standard": {"total": 96126}},
       "verses": [
@@ -11621,6 +11666,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 46, "chapterCount": 46},
+      "checksum": null,
       "count": {"verses": 34, "words": 414, "letters": 1624},
       "value": {"ordinal": {"total": 17273}, "standard": {"total": 100514}},
       "verses": [
@@ -11889,6 +11935,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 47, "chapterCount": 47},
+      "checksum": null,
       "count": {"verses": 31, "words": 512, "letters": 1989},
       "value": {"ordinal": {"total": 21484}, "standard": {"total": 123013}},
       "verses": [
@@ -12197,6 +12244,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 48, "chapterCount": 48},
+      "checksum": null,
       "count": {"verses": 22, "words": 350, "letters": 1355},
       "value": {"ordinal": {"total": 14200}, "standard": {"total": 83032}},
       "verses": [
@@ -12396,6 +12444,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 49, "chapterCount": 49},
+      "checksum": null,
       "count": {"verses": 33, "words": 368, "letters": 1402},
       "value": {"ordinal": {"total": 15368}, "standard": {"total": 98060}},
       "verses": [
@@ -12643,6 +12692,7 @@
     },
     {
       "ref": {"book": "Genesis", "chapter": 50, "chapterCount": 50},
+      "checksum": null,
       "count": {"verses": 26, "words": 375, "letters": 1427},
       "value": {"ordinal": {"total": 14948}, "standard": {"total": 85652}},
       "verses": [
