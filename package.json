@@ -7,6 +7,7 @@
   "main": "index.js",
   "scripts": {
     "gen": "node gen 1",
+    "checksum": "node checksum 1",
     "test": "istanbul cover -x \"**/*.spec.js\" ./node_modules/mocha/bin/_mocha -- js",
     "enforcer": "istanbul check-coverage --statement 100 --branch 100 --function 100 --line 100",
     "build": "npm test && npm run enforcer"
@@ -17,6 +18,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "colors": "^1.4.0",
     "coveralls": "2.11.16",
     "eslint": "^6.3.0",
     "husky": "^3.0.5",

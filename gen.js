@@ -147,8 +147,8 @@ if (args.length) {
   const num = stringUtils.toInteger(args[0])
   if (num) {
     const lookup = genLookup[num]
-    const filename = num.toString().padStart(2, '0') + '-' + lookup
     if (lookup) {
+      const filename = num.toString().padStart(2, '0') + '-' + lookup
       const bookName = stringUtils.capitalize(lookup)
       const filepath = __dirname + '/data/' + filename + '/' + filename + '.md'
       const content = getContent(filepath)
