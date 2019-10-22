@@ -7,6 +7,8 @@ const getError = (actual, expected, category) => {
   return colors.yellow(`${category} - actual ${actual} expected ${expected} (diff ${diff})`)
 }
 
+// Genesis 4:13 last word = error
+
 const args = process.argv.splice(2)
 if (args.length) {
   const num = stringUtils.toInteger(args[0])
@@ -38,16 +40,16 @@ if (args.length) {
 
         const actualStandard = summary.chapters[i].value.standard.total
         const expectedStandard = sum.standard
-        if (actualWords !== expectedWords) {
+        if (actualStandard !== expectedStandard) {
           const error = getError(actualStandard, expectedStandard, 'Standard')
           errors.push(error)
         }
 
         if (!errors.length) {
-          passedCount ++
+          passedCount++
           console.log(colors.green(`${sum.ref.book} ${sum.ref.chapter}`))
         } else {
-          failedCount ++
+          failedCount++
           console.log(colors.red(`${sum.ref.book} ${sum.ref.chapter}`))
           errors.forEach(error => {
             console.log(error)
