@@ -1,6 +1,8 @@
 const stringUtils = require('./utils/string-utils')
 const genLookup = require('./gen-lookup')
 const colors = require('colors/safe')
+const fs = require('fs')
+const stringify = require('json-stringify-pretty-compact')
 
 const getError = (actual, expected, category) => {
   const diff = Math.abs(actual - expected)
@@ -47,9 +49,11 @@ if (args.length) {
 
         if (!errors.length) {
           passedCount++
+          summary.chapters[i].checksum = true
           console.log(colors.green(`${sum.ref.book} ${sum.ref.chapter}`))
         } else {
           failedCount++
+          summary.chapters[i].checksum = false
           console.log(colors.red(`${sum.ref.book} ${sum.ref.chapter}`))
           errors.forEach(error => {
             console.log(error)
@@ -58,6 +62,7 @@ if (args.length) {
       })
 
       console.log(`PASSED ${passedCount} FAILED ${failedCount}`)
+      fs.writeFileSync(filepath + '-summary.json', stringify(summary, {indent: 2, maxLength: 500}), 'utf8')
     }
   }
 }
