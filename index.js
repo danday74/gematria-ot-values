@@ -1,7 +1,7 @@
-const example = require('./js/example')
+const gem = require('./js/gem')
 
-const main = () => {
-  return example()
+const main = (ref, code, force = false) => {
+  return gem(ref, code, force)
 }
 
 module.exports = main
