@@ -7,3 +7,9 @@
 [![downloads](https://img.shields.io/npm/dm/gematria-ot-values.svg)](https://www.npmjs.com/package/gematria-ot-values)
 
 ** Gematria Old Testament Values **
+
+To generate a JSON file of gematria values run `node gen 1`
+
+To add checksums to the newly generated file run `node checksum 1`
+
+Look at [gem.spec.js](./js/gem.spec.js) for example code usages
