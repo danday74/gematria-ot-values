@@ -1,4 +1,4 @@
-const chapterAndVerse = require('chapter-and-verse')
+const chapterAndVerse = require('chapter-and-verse/js/cv')
 const books = require('../data/books')
 const {flatten, range} = require('lodash')
 
