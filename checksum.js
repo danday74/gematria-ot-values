@@ -25,6 +25,7 @@ if (args.length) {
       const summary = require(filepath + '-summary.json')
       let passedCount = 0
       let failedCount = 0
+      let brokenCount = 0
 
       const cv = chapterAndVerse(lookup)
       const chapterCount = cv.book.versesPerChapter.length
@@ -72,8 +73,13 @@ if (args.length) {
           chapter.checksum = 'passed'
           console.log(colors.green(ref))
         } else {
-          failedCount++
-          chapter.checksum = versesFailure ? 'broken' : 'failed'
+          if (versesFailure) {
+            brokenCount++
+            chapter.checksum = 'broken'
+          } else {
+            failedCount++
+            chapter.checksum = 'failed'
+          }
           console.log(colors.red(ref))
           errors.forEach(error => {
             console.log(error)
@@ -81,7 +87,7 @@ if (args.length) {
         }
       })
 
-      console.log(`PASSED ${passedCount} FAILED ${failedCount}`)
+      console.log(`PASSED ${passedCount} FAILED ${failedCount} BROKEN ${brokenCount}`)
       fs.writeFileSync(filepath + '-summary.json', stringify(summary, {indent: 2, maxLength: 500}), 'utf8')
     }
   }
