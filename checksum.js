@@ -1,8 +1,10 @@
 const stringUtils = require('./utils/string-utils')
 const genLookup = require('./gen-lookup')
 const colors = require('colors/safe')
+const assert = require('assert')
 const fs = require('fs')
 const stringify = require('json-stringify-pretty-compact')
+const chapterAndVerse = require('chapter-and-verse')
 
 const getError = (actual, expected, category) => {
   const diff = Math.abs(actual - expected)
@@ -23,24 +25,42 @@ if (args.length) {
       const summary = require(filepath + '-summary.json')
       let passedCount = 0
       let failedCount = 0
+
+      const cv = chapterAndVerse(lookup)
+      const chapterCount = cv.book.versesPerChapter.length
+      assert.strictEqual(chapterCount, checksum.length)
+      assert.strictEqual(chapterCount, summary.chapters.length)
+
       checksum.forEach((sum, i) => {
         const errors = []
+        let versesFailure = false
 
-        const actualLetters = summary.chapters[i].count.letters
+        const chapter = summary.chapters[i]
+        const ref = chapter.ref.book + ' ' + chapter.ref.chapter
+
+        const actualLetters = chapter.count.letters
         const expectedLetters = sum.letters
         if (actualLetters !== expectedLetters) {
           const error = getError(actualLetters, expectedLetters, 'Letters')
           errors.push(error)
         }
 
-        const actualWords = summary.chapters[i].count.words
+        const actualWords = chapter.count.words
         const expectedWords = sum.words
         if (actualWords !== expectedWords) {
           const error = getError(actualWords, expectedWords, 'Words')
           errors.push(error)
         }
 
-        const actualStandard = summary.chapters[i].value.standard.total
+        const actualVerses = chapter.verses.length
+        const expectedVerses = cv.book.versesPerChapter[i]
+        if (actualVerses !== expectedVerses) {
+          versesFailure = true
+          const error = getError(actualVerses, expectedVerses, 'Verses')
+          errors.push(error)
+        }
+
+        const actualStandard = chapter.value.standard.total
         const expectedStandard = sum.standard
         if (actualStandard !== expectedStandard) {
           const error = getError(actualStandard, expectedStandard, 'Standard')
@@ -49,12 +69,12 @@ if (args.length) {
 
         if (!errors.length) {
           passedCount++
-          summary.chapters[i].checksum = true
-          console.log(colors.green(`${sum.ref.book} ${sum.ref.chapter}`))
+          chapter.checksum = 'passed'
+          console.log(colors.green(ref))
         } else {
           failedCount++
-          summary.chapters[i].checksum = false
-          console.log(colors.red(`${sum.ref.book} ${sum.ref.chapter}`))
+          chapter.checksum = versesFailure ? 'broken' : 'failed'
+          console.log(colors.red(ref))
           errors.forEach(error => {
             console.log(error)
           })

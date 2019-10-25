@@ -34,7 +34,8 @@ const gem = (ref, code, force = false) => {
   const book = books[cv.book.name]
   if (!book) return null
   const chapter = book.chapters[cv.chapter - 1]
-  if (!force && !chapter.checksum) return null
+  if (chapter.checksum === 'broken') return null
+  if (!force && chapter.checksum === 'failed') return null
   const from = cv.from || 1
   const to = cv.to || cv.book.versesPerChapter[cv.chapter - 1]
   const indices = range(from, to + 1)

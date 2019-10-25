@@ -88,17 +88,29 @@ describe('gem', () => {
 
   describe('force (allow bad checksums)', () => {
 
-    // Gen 32 has a bad checksum
+    // Gen 46 has a failed checksum
 
-    it('not forced', () => {
+    it('failed not forced', () => {
+      actual = gem('Gen 46:1', 'wc')
+      expect(actual).to.eql(null)
+    })
+
+    it('failed forced', () => {
+      actual = gem('Gen 46:1', 'wc', true)
+      expected = [13]
+      expect(actual).to.eql(expected)
+    })
+
+    // Gen 32 has a broken checksum
+
+    it('broken not forced', () => {
       actual = gem('Gen 32:1', 'wc')
       expect(actual).to.eql(null)
     })
 
-    it('forced', () => {
+    it('broken forced', () => {
       actual = gem('Gen 32:1', 'wc', true)
-      expected = [12]
-      expect(actual).to.eql(expected)
+      expect(actual).to.eql(null)
     })
   })
 })
