@@ -32,6 +32,12 @@ describe('gem', () => {
     expect(actual).to.eql(expected)
   })
 
+  it('second book', () => {
+    actual = gem('Exo 2:1-2', 'lc')
+    expected = [25, 45]
+    expect(actual).to.eql(expected)
+  })
+
   describe('words', () => {
     it('standard', () => {
       actual = gem('Gen 1:1', 'sw')
