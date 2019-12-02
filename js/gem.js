@@ -22,7 +22,9 @@ const codes = {
   'vo': {system: 'ordinal', type: 'total'}, // verse
 
   'wc': {system: null, type: 'words'}, // word count
-  'lc': {system: null, type: 'letters'} // letter count
+  'lc': {system: null, type: 'letters'}, // letter count
+
+  'he': {system: null, type: 'text'}
 }
 
 const gem = (ref, code, force = false) => {
@@ -40,7 +42,17 @@ const gem = (ref, code, force = false) => {
   const to = cv.to || cv.book.versesPerChapter[cv.chapter - 1]
   const indices = range(from, to + 1)
   indices.forEach(i => {
-    const value = code.system ? chapter.verses[i - 1].value[code.system][code.type] : chapter.verses[i - 1].count[code.type]
+    const verse = chapter.verses[i - 1]
+    let value
+    if (code.system) {
+      value = verse.value[code.system][code.type]
+    } else {
+      if (code.type === 'text') {
+        value = verse.text
+      } else {
+        value = verse.count[code.type]
+      }
+    }
     gems.push(value)
   })
   return flatten(gems)

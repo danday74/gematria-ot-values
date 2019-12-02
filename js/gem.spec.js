@@ -32,6 +32,12 @@ describe('gem', () => {
     expect(actual).to.eql(expected)
   })
 
+  it('text', () => {
+    actual = gem('Gen 1:1-2', 'he')
+    expected = ['בראשית ברא אלהים את השמים ואת הארץ', 'והארץ היתה תהו ובהו וחשך על פני תהום ורוח אלהים מרחפת על פני המים']
+    expect(actual).to.eql(expected)
+  })
+
   it('second book', () => {
     actual = gem('Exo 2:1-2', 'lc')
     expected = [25, 45]
